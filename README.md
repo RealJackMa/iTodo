@@ -1,6 +1,6 @@
 # Prework - iTodo
 
-**iTodo** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**iTodo** is an Android app that allows users to build a todo list and basic todo items. Its features include adding new items, editing and deleting existing items.
 
 Submitted by: **Peiyao "Jack" Ma**
 
@@ -32,7 +32,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I've been building mobile apps using React Native for a while now, and I'm very much used to coding in that specific way. Although I've built simple CLI apps in Java before, this project has been quite refreshing for my memory as I have forgotten a lot of the syntax and beauty of Java. I have yet to discover how to style everything elegantly, and I will be focusing on making better UI after my submission.
 
 ## License
 
