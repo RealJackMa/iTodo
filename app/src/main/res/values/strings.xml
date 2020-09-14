@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">iTodo</string>
+    <string name="addButton">Button</string>
+    <string name="add">ADD</string>
+</resources>
