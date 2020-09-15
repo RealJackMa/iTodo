@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,10 @@ import java.util.List;
 import org.apache.commons.io.FileUtils;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String KEY_ITEM_TEXT = "item_text";
+    public static final String KEY_ITEM_POSITION = "item_position";
+    public static final int EDIT_TEXT_CODE = 20;
 
     List<String> items;
 
@@ -59,6 +64,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClicked(int position) {
                 Log.d("MainActivity", "Single Clicked at " + position + "!");
+
+                // Create the new activity.
+                Intent i =  new Intent(MainActivity.this, EditActivity.class);
+
+                // Pass the data being edited.
+                i.putExtra(KEY_ITEM_TEXT, items.get(position));
+                i.putExtra(KEY_ITEM_POSITION, position);
+
+                // Display the activity.
+                startActivityForResult(i, EDIT_TEXT_CODE);
             }
         };
 
