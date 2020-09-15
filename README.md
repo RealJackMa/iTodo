@@ -1,8 +1,8 @@
 # Prework - iTodo
 
-**iTodo** is an Android app that allows users to build a todo list and basic todo items. Its features include adding new items, editing and deleting existing items.
+**iTodo** is an Android app that allows users to build a todo list with basic todo items. It features adding new items, editing and deleting existing items.
 
-Submitted by: **Peiyao "Jack" Ma**
+Submitted by: **Jack Ma**
 
 Time spent: **3** hours spent in total
 
