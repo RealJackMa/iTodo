@@ -20,5 +20,7 @@ public class EditActivity extends AppCompatActivity {
         btnSave =  findViewById(R.id.btnSave);
 
         getSupportActionBar().setTitle("Edit Item");
+
+        etItem.setText(getIntent().getStringExtra(MainActivity.KEY_ITEM_TEXT));
     }
 }
