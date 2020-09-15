@@ -2,6 +2,7 @@ package com.example.itodo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,12 +31,17 @@ public class EditActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Create an intent which will contain the user's results.
+                Intent intent = new Intent();
 
                 // Pass the results.
+                intent.putExtra(MainActivity.KEY_ITEM_TEXT, etItem.getText().toString());
+                intent.putExtra(MainActivity.KEY_ITEM_POSITION, getIntent().getExtras().getInt(MainActivity.KEY_ITEM_POSITION));
 
                 // Set the result of the intent.
+                setResult(RESULT_OK, intent);
 
                 // Close the editing screen and go back.
+                finish();
 
             }
         });
