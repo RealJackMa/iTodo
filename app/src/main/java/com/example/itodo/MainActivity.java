@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
         rvItems = findViewById(R.id.rvItems);
          
         loadItems();
-        items.add("Submit CodePath Application.");
-        items.add("Submit CodePath Prework.");
+//        items.add("Submit CodePath Application.");
+//        items.add("Submit CodePath Prework.");
 
         // Delete Listener.
         ItemsAdapter.OnLongClickListener onLongClickListener = new ItemsAdapter.OnLongClickListener(){
